@@ -28,7 +28,7 @@
     }
     $result2 = mysqli_query($db, "INSERT INTO `users` (`login`, `password`) VALUES ('$login', '$password')");
     if ($result2 == "TRUE") {
-        echo "Вы успешно зарегестрированы! Теперь вы можете зайти на сайт. <a href='/index.php'>Главная страница</a>";
+        echo "Вы успешно зарегестрированы! Теперь вы можете зайти на сайт. <a href='/logined.php'>Главная страница</a>";
     } else {
         echo "Ошибка! Вы не зарегестрированы.";
     }

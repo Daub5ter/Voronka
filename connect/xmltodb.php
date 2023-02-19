@@ -4,7 +4,7 @@
     $information = mysqli_fetch_all($information);
     $xml = simplexml_load_file('xml/data.xml');
     $immovables_id = 1;
-    foreach ($xml as $row) {*/
+    foreach ($xml as $row) {
         /*$fulname = $row -> fulname;
         $title = $row -> title;
         $builder = $row -> builder;
@@ -32,21 +32,8 @@
                 //mysqli_query($db, "INSERT INTO `images` (`id`, `image`, `immovables_id`) VALUES (NULL, '$album', '$immovables_id')");
             }
         }
-        $immovables_id++;
-            /*$image = '';
-            if (stristr($images[$i], ',', false)) {
-                echo "п";
-                $image .= $images[$i];
-            } else {
-                //mysqli_query($db, "INSERT INTO `images` (`id`, `image`, `immovables_id`) VALUES (NULL, '$image', '$immovables_id')");
-                
-            }
-            "<pre>";
-            //echo $images;
-            "</pre>";
-            //mysqli_query($db, "INSERT INTO `images` (`id`, `image`, `immovables_id`) VALUES (NULL, '$image', '$immovables_id')");
-        }*/
-                //mysqli_query($db, "INSERT INTO `images` (`id`, `image`, `immovables_id`) VALUES (NULL, '$image', '$immovables_id')");
-            //mysqli_query($db, "INSERT INTO `images` (`id`, `image`, `immovables_id`) VALUES (NULL, '$images', '$immovables_id')");
+        $immovables_id++;*/
+
+    
     
 ?>

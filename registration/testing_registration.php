@@ -30,7 +30,7 @@
         if ($myrow['password'] == $password) {
             $_SESSION['login'] = $myrow['login'];
             $_SESSION['id'] = $myrow['id'];
-            echo "Вы успешно вошли на сайт! <a href='../index.php'>Главная страница</a>";
+            echo "Вы успешно вошли на сайт! <a href='../logined.php'>Главная страница</a>";
         } else {
             exit("Извините, введенный вами login или пароль не верный.");
         } if ($myrow['login'] == 'admin') {

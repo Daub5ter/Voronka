@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles/style.css">
+   <link rel="stylesheet" href="styles/resetStyle.css">
+   <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" type="text/css" rel="stylesheet">
+   <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" type="text/css" rel="stylesheet">
+   <title>Недвижонок</title>
+</head>
+<body>
+   <header class="header">
+      <ul class="header__list">
+          <li class="header__item"><a href="#" class="logo"></a></li>
+          <li class="header__item"><a class="header__link" href="#information">Как это работает?</a></li>
+          <li class="header__item"><a class="header__link" href="registration/registration.php">Регистрация</a></li>
+          <li class="header__item"><a class="header__link" href="login.php">Вход</a></li>
+      </ul>
+   </header>
+   <container class="main">
+      <h1 class="main__title"><span class="main__title_blue">Недвижонок</span> - лучшее <br> решение для инвестиций <br> в сфере недвижимости</h1>
+      <div class="main__search">
+         <div class="dropdown">
+            <div class="select">
+               <span class="selected">Цена</span>
+               <div class="caret"></div>
+            </div>
+            <ul class="menu">
+               <li><span>От</span><input type="text" class="menu__price"></li>
+               <li><span>До</span><input type="text" class="menu__price"></li>
+               </ul>
+            </ul>
+         </div>
+         <div class="dropdown">
+            <div class="select">
+               <span class="selected">Комнат</span>
+               <div class="caret"></div>
+            </div>
+            <ul class="menu">
+               <li>1</li>
+               <li>2</li>
+               <li>3</li>
+               <li class="active">4</li>
+               <li>5</li>
+               <li>6+</li>
+            </ul>
+         </div>
+         <div class="dropdown">
+            <div class="select">
+               <span class="selected">Район</span>
+               <div class="caret"></div>
+            </div>
+            <ul class="menu">
+               <li>ЮМР</li>
+               <li>СМР</li>
+               <li>ЦЕНТР</li>
+               <li class="active">ЗИП</li>
+               <li>ЧМР</li>
+               <li>ГМР</li>
+               <li>ПМР</li>
+               <li>КМР</li>
+               <li>ФМР</li>
+            </ul>
+         </div>
+         <div class="dropdown">
+            <div class="select">
+               <span class="selected">Цель</span>
+               <div class="caret"></div>
+            </div>
+            <ul class="menu">
+               <li>Жилая</li>
+               <li class="active">Коммерческая</li>
+            </ul>
+         </div>
+      </div>
+      <form action="indexSearchResult.php">
+         <button class="main__search_btn"><p class="main__search_btn_text">Подобрать</p></button>
+      </form>
+   </container>
+   <container class="info">
+      <div class="info__top">
+         <p class="info__text"></a>Недвижимость – самый популярный  способ вложения денег. Она дает малорисковые инвестиции. Даже с учетом  роста налоговых платежей покупка жилья становится выгоднее, чем размещение денег на депозите в банке.</p>
+         <img class="info__img" src="/images/house.svg">
+         <a name="information"></a>
+      </div> 
+      <div class="info_bottom">
+         <p></a>За 2 года цены на 1-комнатные квартиры в новостройках Краснодара выросли на 41%, 2-комнатные подорожали на 40%, а 4-комнатные на 46%! Поэтому если вложить деньги в ликвидную квартиру в Краснодаре, то через время она только вырастет в цене.</p>
+      </div>
+   </container>
+   <div id="container"></div>
+   <footer>
+      <p class="footer__info">&#9400; Nedvizhonok. All rights reserved. </p>
+   </footer>
+   <script src="scripts/main.js"></script>
+   <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+   <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+   <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+</body>
+</html>
